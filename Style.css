@@ -45,6 +45,7 @@ body {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -87,7 +88,7 @@ body {
     color: var(--primary-color);
     background-color: var(--secon-color);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: 600;
     font-size: 1.01rem;
     cursor: pointer;
@@ -101,6 +102,54 @@ body {
 
 /* <!--------------About Section---------------------> */
 
+.about-container {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg-color);
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-sec {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 600px);
+    padding: 15px;
+    align-items: center;
+    
+}
+
+.my-img {
+    border: 8px solid var(--secon-color);
+    background-image: url(my-img.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1500px;
+    width: 500px;
+    height: 500px;
+    margin-left: 80px;
+}
+
+.name {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.info {
+    color: var(--primary-color);
+    margin-bottom: 1.5vh;
+    padding: 0px 25px;
+}
+
+p {
+    color: var(--primary-color);
+    font-style: normal;
+    padding: 0px 25px;
+}
 
 
 
@@ -114,15 +163,20 @@ body {
     height: 100vh;
     width: 100%;
     background-color: var(--bg-color);
+    margin-bottom: 2vh;
 }
 
-.content {
-    color: var(--text-color);
+.my-work {
+    height: 10vh;
+    line-height: 10vh;
     background-color: var(--primary-color);
     text-align: center;
-    padding: 15px;
     font-size: 1.7rem;
     margin-bottom: 8vh;
+}
+
+.my-work h2 {
+    color: var(--text-color);
 }
 
 .project-container {
@@ -174,7 +228,7 @@ h2 {
 
 .btn2 button {
     padding: 12px 35px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     background-color: var(--secon-color);
     font-weight: 600;
@@ -189,3 +243,4 @@ h2 {
 }
 
 /* <!---------------Contact Section------------------> */
+
